@@ -29,3 +29,8 @@ dataset.groupby(['Estado']).size()
 dataset['Genero'].isnull().sum()
 
 dataset['Idade'].describe()
+
+plt.hist(Genero.iloc[:,3], bins=6)
+plt.title('Genero')
+plt.ylabel('Frequência')
+plt.xlabel('Sexo')
